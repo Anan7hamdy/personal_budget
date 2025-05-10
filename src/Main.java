@@ -71,6 +71,8 @@ public class Main {
                     }else {
                         break;
                     }
+                case 3:
+                    break;
             }
         }
     }

@@ -32,9 +32,9 @@ public class Reminder {
     public void showReminder() {
         try {
             BufferedReader show = new BufferedReader(new FileReader("database.txt"));
-            String line;
-            while ((line = show.readLine()) != null) {
-                System.out.println(line);
+            String line2;
+            while ((line2 = show.readLine()) != null) {
+                System.out.println(line2);
             }show.close();
         }catch (Exception e){
             System.out.println("error opening file: " +e.getMessage());
