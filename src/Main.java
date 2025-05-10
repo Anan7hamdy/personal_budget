@@ -15,18 +15,21 @@ public class Main {
         Scanner input = new Scanner(System.in);
         int mainChoice;
         int subChoice;
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
+        System.out.print("Enter your Budget: ");
+        int Budget= input.nextInt();
         System.out.println("===== Main Menu =====");
-        System.out.println("1. Option 1");
+        System.out.println("1. Reminder 1");
         System.out.println("2. Expenses 2");
-        System.out.println("3. Option 3");
+        System.out.println("3. exit 3");
         System.out.print("Enter your choice: ");
+
         mainChoice = input.nextInt();
+
         while (true) {
             switch (mainChoice) {
+
                 case 1:
-                    System.out.print("do you want to  \n 1.  Add Reminder. 2. Show Reminders. \n select (1,2,etc) ");
+                    System.out.print("do you want to  \n 1.  Add Reminder. \n 2. Show Reminders. \n select (1,2,etc) ");
                     subChoice = input.nextInt();
                     Reminder r1 = new Reminder();
                     if (subChoice == 1) {
@@ -48,7 +51,26 @@ public class Main {
                         break;
                     }
                 case 2:
-                    break;
+                    System.out.print("do you want to  \n 1.  Add expense. 2. Show Reminders. \n select (1,2,etc) ");
+                    subChoice = input.nextInt();
+                    Expenses E1 = new Expenses(Budget);
+                    if (subChoice == 1) {
+                        int Amount;
+                        String description, Category;
+                        System.out.print("Enter The Amount : ");
+                        Amount = input.nextInt();
+                        System.out.print("Enter The Category : ");
+                        Category = input.next();
+                        System.out.print("Enter The Description : ");
+                        description = input.next();
+                        E1.addExpense(Amount, Category, description);
+                        continue;
+                    }else if (subChoice == 2) {
+                        E1.showExpenses();
+                        continue;
+                    }else {
+                        break;
+                    }
             }
         }
     }
