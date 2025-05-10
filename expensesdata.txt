@@ -1,0 +1,18 @@
+Expense 1:
+Amount : 15
+Category : balah
+Description : 1kilo
+Remaining budget: 835
+ 
+Expense 1:
+Amount : 20
+Category : food
+Description : breakfast
+Remaining budget: 830
+ 
+Expense 2:
+Amount : 30
+Category : transportation
+Description : macrobus
+Remaining budget: 820
+ 
