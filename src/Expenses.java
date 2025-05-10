@@ -38,9 +38,9 @@ public class Expenses {
     public void showExpenses(){
         try {
             BufferedReader show = new BufferedReader(new FileReader("expensesdata.txt"));
-            String line;
-            while ((line = show.readLine()) != null) {
-                System.out.println(line);
+            String line1;
+            while ((line1 = show.readLine()) != null) {
+                System.out.println(line1);
             }show.close();
         }catch (Exception e){
             System.out.println("error opening file: " +e.getMessage());

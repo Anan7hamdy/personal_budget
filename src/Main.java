@@ -72,6 +72,10 @@ public class Main {
                         break;
                     }
                 case 3:
+                    System.out.println("Exiting...");
+                    break;
+                default:
+                    System.out.println("Wrong choice");
                     break;
             }
         }
