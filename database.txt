@@ -1,0 +1,20 @@
+Reminder 1:
+Date : 24/5
+Time : 12
+Title : exam1
+ 
+Reminder 1:
+Date : 28/5
+Time : 12
+Title : exam2
+ 
+Reminder 1:
+Date : 23-3
+Time : 12
+Title : exe
+ 
+Reminder 2:
+Date : 23-3
+Time : 12
+Title : exe2
+ 
