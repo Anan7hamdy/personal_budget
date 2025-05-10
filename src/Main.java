@@ -13,7 +13,7 @@ import java.io.File;
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int MainChoice;
+        int mainChoice;
         int subChoice;
         System.out.print("Enter your Budget: ");
         int Budget= input.nextInt();
@@ -23,10 +23,10 @@ public class Main {
         System.out.println("3. exit 3");
         System.out.print("Enter your choice: ");
 
-        MainChoice = input.nextInt();
+        mainChoice = input.nextInt();
 
         while (true) {
-            switch (MainChoice) {
+            switch (mainChoice) {
 
                 case 1:
                     System.out.print("do you want to  \n 1.  Add Reminder. \n 2. Show Reminders. \n select (1,2,etc) ");
